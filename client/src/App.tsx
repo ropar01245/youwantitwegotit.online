@@ -6,6 +6,7 @@ interface Product {
   id: string;
   title: string;
   price: string;
+  priceValue: number;
   image: string;
   category: string;
   affiliateUrl: string;
@@ -15,19 +16,23 @@ function App() {
   const [products, setProducts] = useState<Product[]>([]);
   const [category, setCategory] = useState('All');
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('default');
 
   useEffect(() => {
     async function fetchProducts() {
       setLoading(true);
+      setError(null);
       try {
         const apiUrl = import.meta.env.VITE_API_URL || '';
         const response = await fetch(`${apiUrl}/api/products?category=${category}`);
+        if (!response.ok) throw new Error('Failed to reach the server.');
         const data = await response.json();
         setProducts(data);
-      } catch (error) {
-        console.error("Failed to fetch products:", error);
+      } catch (err) {
+        console.error("Failed to fetch products:", err);
+        setError("We're having trouble reaching the trend engine. Please try again in a moment.");
       } finally {
         setLoading(false);
       }
@@ -41,20 +46,26 @@ function App() {
     .filter(p => p.title.toLowerCase().includes(searchTerm.toLowerCase()))
     .sort((a, b) => {
       if (sortBy === 'price-low') {
-        return parseFloat(a.price.replace('$', '')) - parseFloat(b.price.replace('$', ''));
+        return a.priceValue - b.priceValue;
       }
       if (sortBy === 'price-high') {
-        return parseFloat(b.price.replace('$', '')) - parseFloat(a.price.replace('$', ''));
+        return b.priceValue - a.priceValue;
       }
       return 0;
     });
 
   return (
     <div className="app-container">
-      <div id="logo-container">
-        <img src={logo} alt="RonJohns Trendy Things Logo" className="logo" />
-        <p className="tagline">your next favorite thing awaits</p>
+      <div id="logo-header-bar">
+        <div className="logo-wrapper">
+          <div className="brand-text">
+            <h1 className="brand-name">RonJohns</h1>
+            <h2 className="brand-subtitle">TRENDY THINGS</h2>
+            <p className="brand-tagline">Your Next Favorite Thing Awaits</p>
+          </div>
+        </div>
       </div>
+      
       <header className="header">
         <div className="header-actions">
           <div className="search-bar">
@@ -80,11 +91,6 @@ function App() {
       </header>
 
       <main className="content">
-        <div className="hero">
-          <h1>Curated Trends, Delivered to You</h1>
-          <p>Discover what's buzzing in Health, Tech, and more.</p>
-        </div>
-
         <div className="controls">
           <div className="results-count">
             {filteredAndSortedProducts.length} items found
@@ -102,6 +108,11 @@ function App() {
 
         {loading ? (
           <div className="loader">Finding the latest trends...</div>
+        ) : error ? (
+          <div className="error-state">
+            <p>{error}</p>
+            <button onClick={() => window.location.reload()}>Retry</button>
+          </div>
         ) : (
           <div className="product-grid">
             {filteredAndSortedProducts.length > 0 ? filteredAndSortedProducts.map(product => (
