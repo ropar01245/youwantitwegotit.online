@@ -155,9 +155,10 @@ function App() {
   return (
     <div className="app-container">
       <div id="logo-header-bar">
-        <div id="logo-container">
+        <div className="brand-text">
           <h1 className="brand-name">RonJohns</h1>
           <h2 className="brand-subtitle">TRENDY THINGS</h2>
+          <p className="brand-tagline">"Your Next Favorite Thing Awaits"</p>
         </div>
       </div>
 
