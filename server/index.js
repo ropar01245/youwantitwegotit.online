@@ -183,3 +183,5 @@ app.listen(PORT, () => {
   console.log(`Hybrid Mode: Manual JSON + eBay API active.`);
 });
 
+module.exports = app;
+
