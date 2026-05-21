@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import ronProfile from './assets/ron-profile.jpg';
 
 interface Product {
   id: string;
@@ -108,7 +109,7 @@ function App() {
       <div className="optin-page">
         <div className="optin-card">
           <div className="optin-image">
-            <img src="/userProfile.jpg" alt="Ron" />
+            <img src={ronProfile} alt="Ron" />
           </div>
           <div className="optin-content">
             <h1 className="brand-name">RonJohns</h1>
