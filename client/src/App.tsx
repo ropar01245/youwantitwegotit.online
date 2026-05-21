@@ -32,6 +32,7 @@ function App() {
 
     try {
       const apiUrl = import.meta.env.VITE_API_URL || '';
+      // If apiUrl is empty (production), the request goes to the same origin e.g. /api/subscribe
       const response = await fetch(`${apiUrl}/api/subscribe`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -112,7 +113,7 @@ function App() {
             <img src={ronProfile} alt="Ron" />
           </div>
           <div className="optin-content">
-            <h1 className="brand-name">RonJohns</h1>
+            <h1 className="brand-name">RonJohns's</h1>
             <h2 className="brand-subtitle">TRENDY THINGS</h2>
             <p className="catchphrase">"Your Next Favorite Thing Awaits"</p>
             
@@ -122,7 +123,7 @@ function App() {
                 I know the value of trust, quality, and finding exactly what you need.
               </p>
               <p>
-                I built <strong>RonJohns Trendy Things</strong> to cut through the noise and curate the best, 
+                I built <strong>RonJohns's Trendy Things</strong> to cut through the noise and curate the best, 
                 most innovative products out there. Join my newsletter to get my top picks sent straight to your inbox.
               </p>
             </div>
@@ -157,7 +158,7 @@ function App() {
     <div className="app-container">
       <div id="logo-header-bar">
         <div className="brand-text">
-          <h1 className="brand-name">RonJohns</h1>
+          <h1 className="brand-name">RonJohns's</h1>
           <h2 className="brand-subtitle">TRENDY THINGS</h2>
           <p className="brand-tagline">"Your Next Favorite Thing Awaits"</p>
         </div>
@@ -249,7 +250,7 @@ function App() {
             <strong>Affiliate Disclosure:</strong> As an affiliate, we may earn a commission from qualifying purchases made through links on this site. This helps us keep the trends coming at no extra cost to you.
           </p>
           <div className="footer-bottom">
-            <p>&copy; 2026 RonJohns Trendy Things. All rights reserved.</p>
+            <p>&copy; 2026 RonJohn's Trendy Thing's. All rights reserved.</p>
             <p>Built for youwantitwegotit.online</p>
           </div>
         </div>
