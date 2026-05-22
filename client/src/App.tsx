@@ -164,11 +164,11 @@ function App() {
         </div>
       </div>
 
-      <nav className="category-nav">
+      <nav className="nav">
         {categories.map(cat => (
           <button 
             key={cat} 
-            className={category === cat ? 'active' : ''}
+            className={`nav-item ${category === cat ? 'active' : ''}`}
             onClick={() => setCategory(cat)}
           >
             {cat}

@@ -142,28 +142,43 @@ body {
 
 .nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.nav::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .nav-item {
-  background: transparent;
-  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-secondary);
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
+  padding: 0.6rem 1.25rem;
+  border-radius: 20px;
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.3s ease;
   font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item:hover {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  background: rgba(107, 92, 165, 0.4); /* Brand purple with opacity */
+  border-color: #6B5CA5;
+  transform: translateY(-2px);
 }
 
 .nav-item.active {
-  background: var(--accent);
-  color: var(--bg-color);
+  background: #6B5CA5; /* Brand purple */
+  color: white;
+  border-color: #6B5CA5;
+  box-shadow: 0 4px 12px rgba(107, 92, 165, 0.4);
 }
 
 .search-bar input {
