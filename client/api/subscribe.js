@@ -34,8 +34,8 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'Email is required' });
   }
 
-  const apiKey = process.env.SENDSHARK_API_KEY;
-  const campaignId = process.env.SENDSHARK_CAMPAIGN_ID;
+  const apiKey = process.env.SENDSHARK_API_KEY || '62f98cfdbc3476742b577d3953ce2e9f619687747b7d2e7f2d2757bef7c458d2';
+  const campaignId = process.env.SENDSHARK_CAMPAIGN_ID || 'XcX1OdbC5sEf';
 
   if (!apiKey || !campaignId) {
     console.error('SendShark configuration missing');
