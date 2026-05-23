@@ -144,10 +144,6 @@ function App() {
                 {subscribeStatus.message}
               </p>
             )}
-
-            <button className="skip-button" onClick={handleSkip}>
-              Skip to Store
-            </button>
           </div>
         </div>
       </div>
