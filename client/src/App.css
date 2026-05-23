@@ -426,19 +426,84 @@ body {
   transform: translateY(-2px);
 }
 
-.skip-button {
-  background: transparent;
-  border: none;
-  color: #94a3b8;
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  transition: color 0.3s ease;
+/* Teaser Opt-In Styles */
+.teaser-bg {
+  background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
 }
 
-.skip-button:hover {
-  color: #64748b;
+.teaser-card {
+  background: rgba(25, 25, 35, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.8);
+  flex-direction: row-reverse; /* Put image on the right */
+}
+
+.teaser-content {
+  color: white;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+}
+
+.teaser-badge {
+  background: rgba(107, 92, 165, 0.2);
+  color: #a894f0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(107, 92, 165, 0.4);
+}
+
+.teaser-headline {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #fff, #a894f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+.teaser-subhead {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.teaser-form {
+  width: 100%;
+}
+
+.teaser-btn {
+  background: linear-gradient(135deg, #6B5CA5 0%, #4f4284 100%);
+  border: none;
+  font-size: 1.1rem;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.teaser-btn:hover {
+  background: linear-gradient(135deg, #7b6ab8 0%, #5d4d9b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(107, 92, 165, 0.3);
+}
+
+.teaser-image {
+  position: relative;
+}
+
+.teaser-image::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to right, rgba(25, 25, 35, 1) 0%, rgba(25, 25, 35, 0) 20%);
 }
 
 @media (max-width: 768px) {

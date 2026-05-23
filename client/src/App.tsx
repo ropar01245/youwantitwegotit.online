@@ -25,6 +25,9 @@ function App() {
   const [hasOptedIn, setHasOptedIn] = useState(() => {
     return localStorage.getItem('hasOptedIn') === 'true';
   });
+  
+  // Read URL parameter to determine which opt-in page to show (e.g. ?optin=teaser)
+  const optinStyle = new URLSearchParams(window.location.search).get('optin') || 'story';
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -101,6 +104,40 @@ function App() {
     });
 
   if (!hasOptedIn) {
+    if (optinStyle === 'teaser') {
+      return (
+        <div className="optin-page teaser-bg">
+          <div className="optin-card teaser-card">
+            <div className="optin-content teaser-content">
+              <span className="teaser-badge">VIP ACCESS ONLY</span>
+              <h1 className="teaser-headline">Unlock the 2026 Tech & Wellness Trends Before They Sell Out.</h1>
+              <p className="teaser-subhead">Join our private list to access high-ticket electronics, bio-hacking gear, and the gadgets everyone will be talking about tomorrow.</p>
+              
+              <form className="newsletter-form teaser-form" onSubmit={handleNewsletterSubmit}>
+                <input 
+                  type="email" 
+                  placeholder="Enter your best email..." 
+                  required 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <button type="submit" className="teaser-btn">Unlock The Store Now</button>
+              </form>
+              
+              {subscribeStatus.type && (
+                <p className={`subscribe-status ${subscribeStatus.type}`}>
+                  {subscribeStatus.message}
+                </p>
+              )}
+            </div>
+            <div className="optin-image teaser-image">
+              <img src="https://images.unsplash.com/photo-1712764121254-d9867c694b81?auto=format&fit=crop&w=600&q=80" alt="Premium Tech" />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="optin-page">
         <div className="optin-card">
