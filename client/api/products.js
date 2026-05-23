@@ -1,8 +1,5 @@
 const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
-
-const MANUAL_PRODUCTS_PATH = path.join(__dirname, 'manual_products.json');
+const manualProducts = require('./manual_products.json');
 
 // Category-specific cache
 let categoryCache = {};
@@ -82,15 +79,7 @@ async function fetchEbayProducts(category) {
  * Manual System: Reads the JSON file for Amazon/ClickBank products
  */
 function getManualProducts() {
-  try {
-    if (fs.existsSync(MANUAL_PRODUCTS_PATH)) {
-      const raw = fs.readFileSync(MANUAL_PRODUCTS_PATH);
-      return JSON.parse(raw);
-    }
-  } catch (error) {
-    console.error('Error reading manual products:', error);
-  }
-  return [];
+  return manualProducts || [];
 }
 
 async function fetchTrendingProducts(category = 'All') {
