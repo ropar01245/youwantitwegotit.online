@@ -202,6 +202,14 @@ function App() {
             {cat}
           </button>
         ))}
+        <a 
+          href="https://ronswithenbank.aimatrixspillover.com/?tr=https://ronswithenbank.aimatrixspillover.com/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="nav-item partner-link"
+        >
+          🚀 Partner With Ron
+        </a>
       </nav>
 
       <div className="filters-bar">
