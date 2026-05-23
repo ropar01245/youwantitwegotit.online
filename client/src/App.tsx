@@ -61,11 +61,6 @@ function App() {
     }
   };
 
-  const handleSkip = () => {
-    setHasOptedIn(true);
-    localStorage.setItem('hasOptedIn', 'true');
-  };
-
   useEffect(() => {
     async function fetchProducts() {
       setLoading(true);
