@@ -298,5 +298,185 @@
     "category": "E-books",
     "affiliateUrl": "https://29072f111bdtkua9ohsfvmoktz.hop.clickbank.net",
     "source": "manual"
+  },
+  {
+    "id": "m30",
+    "title": "Robotic Smart Lawn Mower",
+    "price": "$1,299.00",
+    "priceValue": 1299,
+    "image": "https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?auto=format&fit=crop&w=400&q=80",
+    "category": "Furniture/Lawn & Garden",
+    "affiliateUrl": "https://www.amazon.com/s?k=robotic+lawn+mower&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m31",
+    "title": "Modular Outdoor Patio Sectional",
+    "price": "$899.00",
+    "priceValue": 899,
+    "image": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5db?auto=format&fit=crop&w=400&q=80",
+    "category": "Furniture/Lawn & Garden",
+    "affiliateUrl": "https://www.amazon.com/s?k=modular+outdoor+sectional&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m32",
+    "title": "Cocoon Hanging Egg Chair",
+    "price": "$249.00",
+    "priceValue": 249,
+    "image": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=400&q=80",
+    "category": "Furniture/Lawn & Garden",
+    "affiliateUrl": "https://www.amazon.com/s?k=hanging+egg+chair&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m33",
+    "title": "Smart Indoor Hydroponics Garden",
+    "price": "$159.00",
+    "priceValue": 159,
+    "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=400&q=80",
+    "category": "Furniture/Lawn & Garden",
+    "affiliateUrl": "https://www.amazon.com/s?k=indoor+hydroponics+garden&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m34",
+    "title": "Animatronic Pikachu Ultra Series",
+    "price": "$89.99",
+    "priceValue": 89.99,
+    "image": "https://images.unsplash.com/photo-1552062754-05574586937e?auto=format&fit=crop&w=400&q=80",
+    "category": "Toys",
+    "affiliateUrl": "https://www.amazon.com/s?k=animatronic+pikachu&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m35",
+    "title": "LEGO Star Wars Smart Play Edition",
+    "price": "$149.99",
+    "priceValue": 149.99,
+    "image": "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=400&q=80",
+    "category": "Toys",
+    "affiliateUrl": "https://www.amazon.com/s?k=lego+star+wars&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m36",
+    "title": "Magna-Tiles Rail Racers Set",
+    "price": "$119.00",
+    "priceValue": 119,
+    "image": "https://images.unsplash.com/photo-1537494612339-6e30095a12d1?auto=format&fit=crop&w=400&q=80",
+    "category": "Toys",
+    "affiliateUrl": "https://www.amazon.com/s?k=magna+tiles+rail+racers&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m37",
+    "title": "Jellycat Amusable Plush Collection",
+    "price": "$28.00",
+    "priceValue": 28,
+    "image": "https://images.unsplash.com/photo-1615486511223-55735f1695c7?auto=format&fit=crop&w=400&q=80",
+    "category": "Toys",
+    "affiliateUrl": "https://www.amazon.com/s?k=jellycat+amusable&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m38",
+    "title": "Quick-Dry Performance Golf Polo",
+    "price": "$45.00",
+    "priceValue": 45,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=400&q=80",
+    "category": "Mens Apparel",
+    "affiliateUrl": "https://www.amazon.com/s?k=mens+performance+polo&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m39",
+    "title": "Slim-Fit Tech Commuter Pants",
+    "price": "$79.00",
+    "priceValue": 79,
+    "image": "https://images.unsplash.com/photo-1624371414361-e6e9efc99182?auto=format&fit=crop&w=400&q=80",
+    "category": "Mens Apparel",
+    "affiliateUrl": "https://www.amazon.com/s?k=mens+tech+commuter+pants&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m40",
+    "title": "Breathable Linen Summer Shirt",
+    "price": "$38.00",
+    "priceValue": 38,
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=400&q=80",
+    "category": "Mens Apparel",
+    "affiliateUrl": "https://www.amazon.com/s?k=mens+linen+shirt&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m41",
+    "title": "Satin Wide-Leg Palazzo Pants",
+    "price": "$54.00",
+    "priceValue": 54,
+    "image": "https://images.unsplash.com/photo-1604176354204-926873ff3da9?auto=format&fit=crop&w=400&q=80",
+    "category": "Womens Apparel",
+    "affiliateUrl": "https://www.amazon.com/s?k=womens+satin+palazzo+pants&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m42",
+    "title": "Eyelet Broderie Anglaise Dress",
+    "price": "$68.00",
+    "priceValue": 68,
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=400&q=80",
+    "category": "Womens Apparel",
+    "affiliateUrl": "https://www.amazon.com/s?k=womens+eyelet+dress&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m43",
+    "title": "Striped Linen Matching Set",
+    "price": "$72.00",
+    "priceValue": 72,
+    "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=400&q=80",
+    "category": "Womens Apparel",
+    "affiliateUrl": "https://www.amazon.com/s?k=womens+linen+matching+set&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m44",
+    "title": "Sojos Retro Polarized Sunglasses",
+    "price": "$19.99",
+    "priceValue": 19.99,
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=400&q=80",
+    "category": "Shade",
+    "affiliateUrl": "https://www.amazon.com/s?k=sojos+retro+sunglasses&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "m45",
+    "title": "Ray-Ban Meta Smart Glasses",
+    "price": "$299.00",
+    "priceValue": 299,
+    "image": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=400&q=80",
+    "category": "Shade",
+    "affiliateUrl": "https://www.amazon.com/s?k=rayban+meta+smart+glasses&tag=ronjohnstrend-20",
+    "source": "manual"
+  },
+  {
+    "id": "cb2",
+    "title": "The Smoothie Diet: 21 Day Program",
+    "price": "$37.00",
+    "priceValue": 37,
+    "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=400&q=80",
+    "category": "E-books",
+    "affiliateUrl": "https://clickbank.com",
+    "source": "manual"
+  },
+  {
+    "id": "cb3",
+    "title": "Moon Reading: Astrology & Manifestation",
+    "price": "$11.00",
+    "priceValue": 11,
+    "image": "https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=400&q=80",
+    "category": "E-books",
+    "affiliateUrl": "https://clickbank.com",
+    "source": "manual"
   }
-  ]
+]
