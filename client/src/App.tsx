@@ -319,6 +319,16 @@ function App() {
           <div className="footer-bottom">
             <p>&copy; 2026 RonJohn's Trendy Thing's. All rights reserved.</p>
             <p>Built for youwantitwegotit.online</p>
+            <p style={{ marginTop: '0.5rem' }}>
+              <a 
+                href="https://ronswithenbank.aimatrixspillover.com/?tr=https://ronswithenbank.aimatrixspillover.com/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{ color: '#f59e0b', textDecoration: 'underline', fontWeight: 'bold' }}
+              >
+                Want to launch an automated AI business like this? Click Here.
+              </a>
+            </p>
           </div>
         </div>
       </footer>
