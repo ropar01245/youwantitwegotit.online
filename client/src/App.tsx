@@ -138,6 +138,37 @@ function App() {
       );
     }
 
+    if (optinStyle === 'minimal') {
+      return (
+        <div className="optin-page minimal-bg">
+          <div className="minimal-card">
+            <h1 className="minimal-headline">The 2026 Trend-Proof Checklist</h1>
+            <p className="minimal-subhead">
+              Don't buy junk. Get my personally verified list of the only <strong>10 products worth your money</strong> this year, and unlock the private store.
+            </p>
+            
+            <form className="newsletter-form minimal-form" onSubmit={handleNewsletterSubmit}>
+              <input 
+                type="email" 
+                placeholder="Where should I send the checklist?" 
+                required 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button type="submit" className="minimal-btn">Send Me The List</button>
+            </form>
+            
+            {subscribeStatus.type && (
+              <p className={`subscribe-status ${subscribeStatus.type}`}>
+                {subscribeStatus.message}
+              </p>
+            )}
+            <p className="minimal-footer">I respect your privacy. No spam, ever.</p>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="optin-page">
         <div className="optin-card">
